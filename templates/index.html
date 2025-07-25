@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KPA Wheel Form</title>
+  <link rel="stylesheet" href="/static/uploads/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form action="/api/wheel-form" method="post" enctype="multipart/form-data">
+      <h2>Submit Wheel Form</h2>
+
+      <label for="formNumber">Form Number</label>
+      <input type="text" name="formNumber" id="formNumber" required>
+
+      <label for="submittedBy">Submitted By</label>
+      <input type="text" name="submittedBy" id="submittedBy" required>
+
+      <label for="color">Color</label>
+      <input type="text" name="color" id="color" required>
+
+      <label for="type">Type</label>
+      <input type="text" name="type" id="type" required>
+
+
+      <label for="file">Upload File</label>
+      <input type="file" name="file" id="file" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

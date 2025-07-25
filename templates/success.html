@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submission Success</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    .success-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 450px;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .success-box h2 {
+      color: #28a745;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .success-box p {
+      margin: 8px 0;
+      font-size: 15px;
+      color: #333;
+    }
+    .success-box code {
+      background: #f8f9fa;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-box">
+    <h2>✅ Submission Successful!</h2>
+    <p><strong>Form Number:</strong> <code>{{ data.formNumber }}</code></p>
+    <p><strong>Submitted By:</strong> {{ data.submittedBy }}</p>
+    <p><strong>Color:</strong> {{ data.fields.color }}</p>
+    <p><strong>Type:</strong> {{ data.fields.type }}</p>
+    <p><strong>File Path:</strong> {{ data.filePath }}</p>
+    <p><strong>Form ID:</strong> {{ data.id }}</p>
+    <br />
+    <a href="/" style="color:#007bff;">🔁 Submit Another</a>
+  </div>
+</body>
+</html>
